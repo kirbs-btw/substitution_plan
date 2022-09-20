@@ -1,0 +1,22 @@
+.color{
+  color: white;
+  background-color: #8dc6ff;
+
+
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  padding-left: 1vh;
+  padding-right: 5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-bottom: white solid 2.5px;
+  font-family: Gotham Medium;
+}
+tr{
+  margin-bottom: 1vh;
+}
