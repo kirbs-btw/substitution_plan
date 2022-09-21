@@ -1,9 +1,18 @@
+body{
+  display: flex;
+  justify-content: center;
+
+
+}
+
+
 .color{
   color: white;
   background-color: #8dc6ff;
 
-
 }
+
+
 
 table{
   border-collapse: collapse;
