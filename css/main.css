@@ -12,11 +12,23 @@ body{
 }
 
 .nav{
-  border: solid 2px black;
+  width: 25vw;
 }
+
+
+
 .content{
-  border: solid 2px black;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
+
+.nav, .content{
+  border: solid black 2px;
+}
+
 
 .color{
   color: white;
@@ -39,8 +51,4 @@ tr{
 
 .level{
   padding-top: 5vh;
-}
-
-h1{
-  text-align: center;
 }
