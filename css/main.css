@@ -13,9 +13,9 @@ body{
 
 .nav{
   width: 25vw;
+  display: flex;
+  justify-content: center;
 }
-
-
 
 .content{
   width: 75vw;
@@ -25,9 +25,10 @@ body{
   align-items: center;
 }
 
-.nav, .content{
+/* debug */
+/* .nav, .content{
   border: solid black 2px;
-}
+} */
 
 
 .color{
