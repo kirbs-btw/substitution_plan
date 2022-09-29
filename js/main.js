@@ -25,16 +25,13 @@ dataObj = [
   {"Stunde": 4, "Lehrer": "SUE", "Fach": "SpK", "Raum": "SP_PTH_2", "Info": ""},
 ];
 
+
 function insertValues(data){
   var table = document.getElementById("classTable");
 
-
-  // colCount is there to count when to color a row and not to
-  var colCount = 0;
   for (var i = data.length-1; i >= 0; i--) {
 
     if (data[i].Klasse != null){
-      console.log(data[i].Klasse);
       var row = table.insertRow(0);
       var cell = row.insertCell(0);
       cell.innerHTML = `<br/>${data[i].Klasse}`;
@@ -57,13 +54,13 @@ function insertValues(data){
       colCount = 0;
     }
     else{
-      colCount++;
-      console.log(`colCount: ${colCount}`);
+      // colCount++;
+      // console.log(`colCount: ${colCount}`);
       var row = table.insertRow(0);
-      if (colCount % 2 == 0){
-        row.className = "color";
-      }
-
+      // row.className = "underlineTd";
+      // if (colCount % 2 == 0){
+      //   row.className = "color";
+      // }
 
       var info = row.insertCell(0);
       var room = row.insertCell(0);
@@ -77,15 +74,13 @@ function insertValues(data){
       room.innerHTML = `${data[i].Raum}`;
       info.innerHTML = `${data[i].Info}`;
 
-      console.log(data[i].Stunde);
-      console.log(data[i].Lehrer);
-      console.log(data[i].Fach);
-      console.log(data[i].Raum);
-      console.log(data[i].Info);
+      hour.className = "underlineTd";
+      teacher.className = "underlineTd";
+      subject.className = "underlineTd";
+      room.className = "underlineTd";
+      info.className = "underlineTd";
     }
   }
-
-
 }
-console.log("hello");
+
 insertValues(dataObj);
