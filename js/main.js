@@ -25,8 +25,12 @@ dataObj = [
   {"Stunde": 4, "Lehrer": "SUE", "Fach": "SpK", "Raum": "SP_PTH_2", "Info": ""},
 ];
 
+dayObj = [{"day": "Mittwoch 28.09.2022", "update": "Aktualisiert 27.09.2022 - 10:39"}]
 
-function insertValues(data){
+function insertValues(data, dayData){
+  document.getElementById('h1').innerHTML = dayData[0].day;
+  document.getElementById('h3').innerHTML = dayData[0].update;
+
   var table = document.getElementById("classTable");
 
   for (var i = data.length-1; i >= 0; i--) {
@@ -83,4 +87,4 @@ function insertValues(data){
   }
 }
 
-insertValues(dataObj);
+insertValues(dataObj, dayObj);
