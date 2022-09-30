@@ -15,15 +15,15 @@ body{
   align-items: center;
 }
 
-.h1{
+#h1{
   font-size: 250%;
   margin-bottom: 0;
 }
-.h3{
+#h3{
   font-size: 125%;
 }
 
-.h1, .h3{
+#h1, #h3{
   color: #7895B2;
   font-style: normal;
 }
@@ -48,7 +48,7 @@ td{
 }
 
 .underlineTd{
-  border-bottom: 1px #7895B2 solid;
+  border-top: 1px #7895B2 solid;
 }
 
 .sideMenu{
