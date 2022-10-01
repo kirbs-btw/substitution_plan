@@ -87,4 +87,36 @@ function insertValues(data, dayData){
   }
 }
 
+function log_out(){
+  console.log("bye");
+}
+
+function displayDay(n){
+  switch (n) {
+    case 1:
+      console.log("heute");
+      break;
+    case 2:
+      console.log("morgen");
+      break;
+    case 3:
+      console.log("heute + 1");
+      break;
+    case 4:
+      console.log("heute + 2");
+      break;
+    case 5:
+      console.log("heute + 4");
+      break;
+    case 6:
+      console.log("heute + 6");
+      break;
+    case 7:
+      console.log("heute + 13");
+      break;
+    default:
+      console.log("idk what happened");
+  }
+}
+
 insertValues(dataObj, dayObj);
