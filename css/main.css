@@ -71,3 +71,15 @@ li{
   padding-top: 1.5%;
   color: #F5EFE6;
 }
+
+button{
+  border: None;
+  color: #F5EFE6;
+  background-color: #00000000;
+  padding: 0;
+  font-size: 105%;
+}
+
+button:hover{
+  color: #AEBDCA;
+}
